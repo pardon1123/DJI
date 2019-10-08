@@ -1,0 +1,161 @@
+body{
+    background: #f8f8f8;
+}
+
+.menu li{
+    color: black;
+    list-style-type: none;
+    width: 120px;
+    height: 30px;
+    border: 1px solid #000;
+    text-align: center;
+}
+
+.menu li:first-child{
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.menu li:last-child{
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.menu li:nth-child(2n-1){
+    background-color: #ccc;
+}
+
+.menu li:nth-child(2n) a{
+    color: orange;
+}
+
+.menu li a:hover{
+    color: red;
+}
+
+.menu li a:active{
+    color: green;
+}
+
+.menu li:hover::after{
+    content: " <<";
+    color: red;
+}
+
+.menu li:hover::before{
+    content: " >>";
+    color: red;
+}
+
+.headling{
+    color: black;
+    font-size: 24px;
+    font-weight: 400;
+    background-color: #eaeaea;
+}
+
+.long::first-letter{
+    font-size: 30px;
+    color: brown;
+}
+
+.short{
+    color: #707070;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 16px;
+}
+
+.long{
+    color: #484343;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+.char{
+    list-style-image: url("img/list.png");
+    font-size: 21px;
+    line-height: 25px;
+    font-style: oblique
+}
+
+.chartable{
+    border: 1px solid #000;
+    width: 600px;
+    height: 300px;
+    border-collapse: collapse;
+}
+
+.chartable td{
+    border: 1px solid black;
+    padding-left: 10px;
+}
+
+.feedback{
+    height: 20px;
+    width: 800px;
+    color: darkblue;
+    background-color: #ffe;
+    text-transform: capitalize;
+}
+
+.email{
+    height: 20px;
+    width: 150px;
+    color: darkblue;
+    background-color: #ffe;
+}
+
+.email:focus{
+    background-color: cornflowerblue;
+    color: wheat;
+}
+
+.text::first-letter{
+    font-size: 30px;
+    color: brown;
+}
+
+.table{
+    border: 1px solid #000;
+    width: 400px;
+    height: 300px;
+    border-collapse: collapse;
+}
+
+.table td{
+    border: 1px solid black;
+    padding-left: 10px;
+    vertical-align: middle;
+}
+
+.table tr:first-child{
+    height: 40px;
+}
+
+.header img{
+    width: 120px;
+    height: 100px;
+}
+
+.goodsimg{
+    width: 250px;
+    height: 250px;
+    outline: 5px solid #000;
+}
+
+.goodsimg:hover{
+    outline: none;
+}
+
+.catalogimg{
+    width: 150px;
+    height: 150px;
+    outline: 2px solid black;
+}
+
+.catalogimg:hover{
+    outline: 2px solid red;
+}
