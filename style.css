@@ -2,14 +2,76 @@ body{
     background: #f8f8f8;
 }
 
-.catalogimg{
-    width: 150px;
-    height: 150px;
-    outline: 2px solid black;
+.menu li{
+    color: black;
+    list-style-type: none;
+    width: 120px;
+    height: 30px;
+    border: 1px solid #000;
+    text-align: center;
 }
 
-.catalogimg:hover{
-    outline: 2px solid red;
+.menu li:first-child{
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.menu li:last-child{
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.menu li:nth-child(2n-1){
+    background-color: #ccc;
+}
+
+.menu li:nth-child(2n) a{
+    color: orange;
+}
+
+.menu li a:hover{
+    color: red;
+}
+
+.menu li a:active{
+    color: green;
+}
+
+.menu li:hover::after{
+    content: " <<";
+    color: red;
+}
+
+.menu li:hover::before{
+    content: " >>";
+    color: red;
+}
+
+.headling{
+    color: black;
+    font-size: 24px;
+    font-weight: 400;
+    background-color: #eaeaea;
+}
+
+.long::first-letter{
+    font-size: 30px;
+    color: brown;
+}
+
+.short{
+    color: #707070;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 16px;
+}
+
+.long{
+    color: #484343;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
 }
 
 .char{
@@ -31,11 +93,12 @@ body{
     padding-left: 10px;
 }
 
-.container{
+.feedback{
+    height: 20px;
     width: 800px;
-    margin: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    color: darkblue;
+    background-color: #ffe;
+    text-transform: capitalize;
 }
 
 .email{
@@ -50,103 +113,9 @@ body{
     color: wheat;
 }
 
-.feedback{
-    height: 20px;
-    width: 800px;
-    color: darkblue;
-    background-color: #ffe;
-    text-transform: capitalize;
-}
-
-.footer{
-    height: 50px;
-    background-color: dimgray;
-    padding: 5px;
-    border-radius: 5px;
-    text-align: right;
-}
-
-.goodsimg{
-    width: 250px;
-    height: 250px;
-    outline: 2px solid #000;
-    float: left;
-}
-
-.goodsimg:hover{
-    outline: none;
-}
-
-.header{
-    height: 170px;
-}
-
-.header img{
-    width: 120px;
-    height: 100px;
-    float: left;
-}
-
-.headling{
-    color: black;
-    font-size: 24px;
-    font-weight: 400;
-    background-color: #eaeaea;
-}
-
-.long{
-    color: #484343;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    text-align: left;
-}
-
-.long::first-letter{
+.text::first-letter{
     font-size: 30px;
     color: brown;
-}
-
-.menu li{
-    color: black;
-    list-style-type: none;
-    width: 180px;
-    height: 30px;
-    border: 1px solid #000;
-    text-align: center;
-    border-radius: 10px;
-    background-color: #ccc;
-    float: right;
-    margin-left: 5px;
-    margin-right: 5px;;
-    margin-top: 30px;
-}
-
-.menu li:hover::before{
-    content: " >>";
-    color: red;
-}
-
-.menu li:hover::after{
-    content: " <<";
-    color: red;
-}
-
-.menu li a:hover{
-    color: red;
-}
-
-.menu li a:active{
-    color: green;
-}
-
-.short{
-    color: #707070;
-    font-size: 14px;
-    font-style: italic;
-    line-height: 16px;
-    width: 400px;
-    margin-left: 300px;
 }
 
 .table{
@@ -166,7 +135,27 @@ body{
     height: 40px;
 }
 
-.text::first-letter{
-    font-size: 30px;
-    color: brown;
+.header img{
+    width: 120px;
+    height: 100px;
+}
+
+.goodsimg{
+    width: 250px;
+    height: 250px;
+    outline: 5px solid #000;
+}
+
+.goodsimg:hover{
+    outline: none;
+}
+
+.catalogimg{
+    width: 150px;
+    height: 150px;
+    outline: 2px solid black;
+}
+
+.catalogimg:hover{
+    outline: 2px solid red;
 }
