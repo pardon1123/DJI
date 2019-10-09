@@ -2,83 +2,28 @@ body{
     background: #f8f8f8;
 }
 
-.menu li{
+a{
+    text-decoration: none;
     color: black;
-    list-style-type: none;
-    width: 120px;
-    height: 30px;
-    border: 1px solid #000;
-    text-align: center;
 }
 
-.menu li:first-child{
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
+.bye_but{
+    height: 40px;
+    width: 100px;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: darkgrey;
+    border-radius: 10px;
 }
 
-.menu li:last-child{
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-}
-
-.menu li:nth-child(2n-1){
-    background-color: #ccc;
-}
-
-.menu li:nth-child(2n) a{
-    color: orange;
-}
-
-.menu li a:hover{
+.bye_but:hover{
     color: red;
+    background-color: darkgoldenrod;
 }
 
-.menu li a:active{
-    color: green;
-}
-
-.menu li:hover::after{
-    content: " <<";
-    color: red;
-}
-
-.menu li:hover::before{
-    content: " >>";
-    color: red;
-}
-
-.headling{
-    color: black;
-    font-size: 24px;
-    font-weight: 400;
-    background-color: #eaeaea;
-}
-
-.long::first-letter{
-    font-size: 30px;
-    color: brown;
-}
-
-.short{
-    color: #707070;
-    font-size: 14px;
-    font-style: italic;
-    line-height: 16px;
-}
-
-.long{
-    color: #484343;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    text-align: left;
-}
-
-.char{
-    list-style-image: url("img/list.png");
-    font-size: 21px;
-    line-height: 25px;
-    font-style: oblique
+.catalogimg{
+    width: 150px;
+    height: 150px;
 }
 
 .chartable{
@@ -93,12 +38,9 @@ body{
     padding-left: 10px;
 }
 
-.feedback{
-    height: 20px;
+.container{
     width: 800px;
-    color: darkblue;
-    background-color: #ffe;
-    text-transform: capitalize;
+    margin: 0 auto;
 }
 
 .email{
@@ -113,49 +55,142 @@ body{
     color: wheat;
 }
 
-.text::first-letter{
-    font-size: 30px;
-    color: brown;
+.feedback{
+    height: 20px;
+    width: 800px;
+    color: darkblue;
+    background-color: #ffe;
+    text-transform: capitalize;
 }
 
-.table{
-    border: 1px solid #000;
-    width: 400px;
-    height: 300px;
-    border-collapse: collapse;
+.footer{
+    background: #bbb;
+    height: 50px;
+    border-radius: 5px;
+    margin-top: 10px;
 }
 
-.table td{
-    border: 1px solid black;
-    padding-left: 10px;
-    vertical-align: middle;
+.footer p{
+    float: right;
+    padding-right: 10px;
 }
 
-.table tr:first-child{
-    height: 40px;
+.good{
+    width: 150px;
+    height: 180px;
+    background-color: white;
+    display: inline-block;
+    border: 2px solid black;
+    margin: 0 10px;
+    border-radius: 5px;
 }
 
-.header img{
-    width: 120px;
-    height: 100px;
+.good:hover{
+    border: 2px solid red;
+}
+
+.good p{
+    margin: 5px 0;
+    font-size: 16px;
+    text-align: center;
 }
 
 .goodsimg{
     width: 250px;
     height: 250px;
     outline: 5px solid #000;
+    float: left;
+    margin: 10px;
 }
 
 .goodsimg:hover{
     outline: none;
 }
 
-.catalogimg{
-    width: 150px;
-    height: 150px;
-    outline: 2px solid black;
+.header{
+    background-image: url(img/header_bg.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    height: 140px;
 }
 
-.catalogimg:hover{
-    outline: 2px solid red;
+.header img{
+    width: 140px;
+    height: 100px;
+    margin-top: 20px;
+    margin-left: 40px;
+    float: left;
+}
+
+.headling{
+    color: black;
+    font-size: 24px;
+    font-weight: 400;
+    background-color: #eaeaea;
+    clear: both;
+    border-radius: 5px;
+}
+
+.long{
+    color: #484343;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+.long::first-letter{
+    font-size: 30px;
+    color: brown;
+}
+
+.main{
+    clear: both;
+}
+
+.menu{
+    float: right;
+}
+
+.menu li{
+    color: black;
+    list-style-type: none;
+    width: 120px;
+    height: 30px;
+    border: 2px solid #000;
+    text-align: center;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 40px;
+    margin-right: 25px;
+}
+
+.menu li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding-top: 5px;
+    font-weight: 700;
+}
+
+.menu li a:hover{
+    color: red;
+}
+
+.menu li a:active{
+    color: green;
+}
+
+.short{
+    color: #707070;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 16px;
+    margin-top: 130px;
+}
+
+.text::first-letter{
+    font-size: 30px;
+    color: brown;
 }
